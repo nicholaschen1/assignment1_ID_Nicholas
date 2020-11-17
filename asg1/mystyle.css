@@ -7,44 +7,143 @@
     border-radius: 10px;
   }
 body {
-  background-color: black;
+  background-color:grey;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', serif;
+  display:flex; 
+  flex-direction:column; 
 }
  .picture {
-   float:left;
+   padding: 30px;
    width:300px;
    height:300px;
  }
 
  .content-header {
    text-align: center;
+   color: aliceblue;
  }
 
- .intro{
+ .content {
    text-align: center;
-   padding: 60px;
+   background-color: black;
+   
  }
 
  .intro-para {
    color: white;
+   width: 50%;
+   float: right;
+   border: 10px;
+   border-color: aliceblue;
+   font-family: 'Merriweather', serif;
  }
 
- .navi-bar {
-  display: block;
-  width: 100%;
-  background-color: #555;
-  overflow: hidden;
-  position: relative;
+
+.navbar {
+  background-color: black;
+  list-style: none;
+  text-align: center;
+  padding: 20px 0 20px 0;
 }
 
-.navi-bar a {
-  float: left;
-  padding: 12px;
-  color: pink;
+.navbar li {
+  display: inline-block;
+  padding: 0 25px 0 0;
+  font-size: 20px;
+  
+}
+
+.navbar a {
   text-decoration: none;
-  font-size: 17px;
-  width: 32%; 
+  color: pink;
+  justify-content: flex-end;
+  font-family: 'Merriweather', serif;
+}
+
+.navbar li:hover {
+  background-color:aquamarine;
+  color: pink;
+}
+
+.navbar a:hover{
+  text-decoration: none;
+  color: aquamarine;
+}
+
+.pic {
+  color: #000000;
+  float: left;
+  color: white;
+  padding-left: 20px;
+  font-weight: bold;
+  font-family: 'Merriweather', serif;
+}
+
+.pic a {
+  text-decoration: none;
+  color: white;
+}
+
+.banner {
+  display: block;
+  width: 100%;
+}
+
+.banner-img {
+  display: block;
+  width: 100%;
+}
+
+.banner-text {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  font-size: 70px;
+  color: aliceblue;
+  font-family: 'Merriweather', serif;
+  text-align: center;
+  margin: auto;
 }
 
 .navi-bar a:hover {
   background-color: aquamarine;
+}
+
+.contact-form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+footer {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  border: 3px solid pink;
+  margin-top:auto; 
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-twitter {
+background: #55ACEE;
+color: white;
+}  
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 30px;
+    margin: 5px 2px;
+    border-radius: 50%;
 }
