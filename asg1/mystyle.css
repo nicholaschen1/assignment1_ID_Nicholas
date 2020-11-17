@@ -6,10 +6,11 @@
     font-size: 30px;
     border-radius: 10px;
   }
-
+body {
+  background-color: black;
+}
  .picture {
-   margin-left: auto;
-   margin-right: auto;
+   float:left;
    width:300px;
    height:300px;
  }
@@ -20,4 +21,31 @@
 
  .intro{
    text-align: center;
+   padding: 60px;
  }
+
+ .intro-para {
+   color: white;
+ }
+
+ .navi-bar {
+  display: block;
+  width: 100%;
+  background-color: #555;
+  overflow: hidden;
+  position: relative;
+}
+
+.navi-bar a {
+  float: left;
+  padding: 12px;
+  color: pink;
+  text-decoration: none;
+  font-size: 17px;
+  width: 32%; 
+  text-align: center;
+}
+
+.navi-bar a:hover {
+  background-color: aquamarine;
+}
