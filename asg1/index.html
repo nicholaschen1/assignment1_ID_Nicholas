@@ -9,15 +9,32 @@
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet"> 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
+<!--code for scroll to top function-->
+<script>
+var gotopbutton = document.getElementById("backtotop")
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function gotop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
   <body>
     
-tes tes
+  <button onclick="gotop()" id="backtotop" title="Go to top">Back to Top</button>
       <!--navigation bar-->
     <ul class="navbar">
       <div class="pic"><a href="#">My Portfolio</a></div>
-      <li><a href="#">Intro</a></li>
-      <li><a href="#">My Skills</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">My Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
       
 
@@ -25,12 +42,13 @@ tes tes
     <div class="banner">
       <img class="banner-img" alt="banner image" src="images/banner.jpg">
       <div class="banner-text">Hello, Welcome To My Portfolio!<p>I'm Nicholas!</p></div>
-    </div>
+    </div><br><br>
 
+ 
 
     <!--self introduction-->
-        <section class="content">
-            <h1 class="content-header">About me</h1>
+        <section class="content"><a name="about"></a>
+            <h1>About me</h1>
             <img alt="picture" class="picture" src="https://i.imgur.com/cVTVm8l.png">
             <p class="intro-para">
             ​Hello! My name is Nicholas, I am currently studying Immersive Media at Ngee An Polytechnic. I always had a strong interest in games and IT-related topics,  I pursued Application Development in ITE Higher Nitec and it unexpectedly gave me even more passion to pursue the tech industry. I hope to work in the game industry whether it be a game designer, programmer, or even a narrative writer.
@@ -41,30 +59,74 @@ tes tes
             </p>
         </section><br><br>
 
+    <!--Skills and achievements section-->
+        <section class="skills"><a name="skills"></a>
+          <h1 class="skills-header">My Skills</h1>
+          
+            <li>Basic HTML and CSS</li>
+            <li>Basic Swift</li>
+            <li>Search Engine optimization</li>
+            <li>Adobe Photoshop, Illustrator, Lightroom and Premiere </li>
+            <li>UI/UX design</li>
+          
+
+          <h1 class="skills-header">Achievements</h1>
+          <h2>2014</h2>
+            
+              <li>Top in stream for English language</li>
+            
+            <h2>2015</h2>
+            
+              <li>NYAA Silver Award</li>
+              <li>Represented school in IFLY competition for school</li>
+
+            <h2>2016</h2>
+            <li>Edusave award for good leadership</li>
+            <li>Nominated student council EXCO</li>
+            <li>Nominated captain of CCA</li>
+            <li>Served in VIA trip in Vietnam to rebuild school for poor children</li>
+            <h2>2017</h2>
+            <li>Edusave award for good progress</li>
+            <li>Edusave award for achievement, good leadership and service(EAGLES)</li>
+            <li>Participated in conducting secondary 1 orientation camp</li>
+            <li>Graduated with N levels certificate</li>
+
+            <h2>2018</h2>
+            <li>Participated in ITESC tournament for Badminton CCA</li>
+
+            <h2>2019</h2>
+            <li>Graduated Higher Nitec with Diploma in Applications Development</li>
+        </section>
+        <br>
+
 
     <!--contact me section-->
-    <div class="contact-form">
+    <div class="contact-form"><a name="contact"></a>
+      <h1>Contact</h1>
       <form action="/action_page.php">
-        <label for="fname">Name</label>
-        <input type="text" id="fname" name="Nicholas" placeholder="Your name.."><br><br>
+        <label for="fname">Name: </label>
+        <input type="text" id="fname" name="name" placeholder="Your name..">
+        <br><br>
     
-        <label for="lname">Email</label>
+        <label for="lname">Email: </label>
         <input type="text" id="lname" name="Email" placeholder="Your email.."><br><br>
     
-        <label for="country">Number</label><br><br>
-        
+        <label for="country">Number: </label>
           <input type="tel">
-        </select>
+          <br><br>
     
-        <label for="subject">Reason for contact</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        <label for="subject">Reason for contact: </label><br><br>
+        <textarea id="contact-textarea" placeholder="Write something.." rows="10"></textarea>
+        <br><br>
     
         <input type="submit" value="Submit">
       </form>
-    </div>
+    </div><br>
+
+    
 
     <!--footer for social media-->
-      <footer class="footer">
+      <footer>
         <p>Author: Nicholas Chen<br>
         <a href="https://www.linkedin.com/in/nicholas-chen-47550b1a9/" target="_blank" class="fa fa-linkedin"></a>
         <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
