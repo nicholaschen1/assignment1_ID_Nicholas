@@ -17,7 +17,7 @@ In the next few sections there are sections that are dedicated to a short self i
 The footer of the page has different social media icons that lead to social media sites whenever clicked.
 
 Features to be added:
-1) Submit button leads to another page that thanks the user for submitting the contact form. 
+1) Submit button leads to another page that thanks the user for submitting the contact form. May also add requirements for submitting the form using Javascript.
 2) A new section that shows pictures of projects that I have done or still working on. Planning to use an image carousel, but may just use static images in a div instead. This new section will have a new navigation button added as well.
 
 
@@ -31,10 +31,7 @@ i. Try clicking on different buttons and verify that the page will scroll to the
 ii. Scroll down the page and verify whether the navigation bar follows as the user scrolls.
 iii. Click the home button, while at the bottom of the page and verify that the page scrolls back to the top.
 
-2) Form:
-i. Don't fill out all the fields in the form and try to submit. Upon clicking submit it should prompt the user to fill out the required fields.
-
-3) Footer
+2) Footer
 i. Click on the icons and verify that they open a new page to an external site.
 
 

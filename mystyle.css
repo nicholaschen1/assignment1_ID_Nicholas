@@ -145,7 +145,35 @@ html {
       height:75px;
      }
     }
+
+@media screen and (max-width: 900px) {
+      .column {
+        width: 50%;
+      }
+    }
   
+@media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+      }
+    }
+  
+
+
+.align-img {
+  margin: 10px auto 20px;
+  display: block;
+}
+
+.img-cell {
+  display: flex;
+  margin-left: 5em;
+  margin-right: 5em;
+  border: 4px dashed pink;
+  border-radius: 10px;
+  padding: 2em;
+  
+}
 
 .navi-bar a:hover {
   background-color: aquamarine;

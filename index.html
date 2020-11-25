@@ -10,10 +10,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet"> 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-
-
   <body>
-    
+  <script>
+    function submitted() {
+  alert("The form was submitted");
+}
+  </script>
 
       <!--navigation bar-->
     <ul class="navbar">
@@ -86,30 +88,45 @@
         </section><br>
 
 
-        <article></article>
+        <article class="work">
+          
+            <div class="img-cell">
+              <img src="images/rocketeer_portfolio.png" alt="website" width="950px;">
+              <h3>My Work</h3>
+              <p>1 dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+            </div><br>
+            <div class="img-cell">
+              <p class="align-img">
+              <img src="images/movie listing.jpg" alt="website" class="image" width="400px;">
+              </p>
+              <h3>My Work</h3>
+              <p>1 dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+            </div>
+          
+        </article>
         
 
 
      <!--me section-->
-    <div class="contact-form"><a name="contact"></a>
+    <div class="contact-form" onsubmit="submitted"><a name="contact"></a>
       <h1>Contact</h1>
       <form action="/action_page.php">
         <label for="fname">Name: </label>
-        <input type="text" id="fname" name="name" placeholder="Your name..">
+        <input type="text" id="fname" name="name" placeholder="Your name.." required>
         <br><br>
     
         <label for="lname">Email: </label>
-        <input type="text" id="lname" name="Email" placeholder="Your email.."><br><br>
+        <input type="text" id="lname" name="Email" placeholder="Your email.." required><br><br>
     
         <label for="country">Number: </label>
-          <input type="tel">
+          <input type="tel" required>
           <br><br>
     
         <label for="subject">Reason for contact: </label><br><br>
-        <textarea id="contact-textarea" placeholder="Write something.." rows="10"></textarea>
+        <textarea id="contact-textarea" placeholder="Write something.." rows="10" required></textarea>
         <br><br>
     
-        <input type="submit" target="_blank" value="Submit">
+        <input type="submit" value="Submit" onclick="submitted()" target="_blank">
       </form>
     </div><br>
 
