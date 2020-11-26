@@ -21,8 +21,8 @@ Features to be added:
 2) A new section that shows pictures of projects that I have done or still working on. Planning to use an image carousel, but may just use static images in a div instead. This new section will have a new navigation button added as well.
 
 
-TECHNOLOGIES USED
-HTML, CSS
+TECHNOLOGIES USED:
+HTML, CSS, GitHub
 
 
 TESTING
