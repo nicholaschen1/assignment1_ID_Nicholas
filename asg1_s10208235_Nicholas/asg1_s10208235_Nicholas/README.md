@@ -4,6 +4,9 @@ This website is a static front-end website using HTML,CSS and modern web develop
 
 DESIGN PROCESS
 This website is for future employers who want to know me better by taking a look at my educational history and the skills that I have learnt. 
+Wireframes used:
+1) Web Page - https://xd.adobe.com/view/e2243ace-1bf3-4f74-8fbb-440ffad5872b-b777/
+2) Mobile Page = https://xd.adobe.com/view/bd9b6726-0b95-4659-a359-0f99723a703d-e8c8/
 
 As recruiters, they would want content to be straightforward and concise, which is why everything is in a single page so that they won't have to wait for different pages to load. I also tried to keep the colour scheme simple.
 
