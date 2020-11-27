@@ -16,8 +16,6 @@ In the next few sections there are sections that are dedicated to a short self i
 
 The footer of the page has different social media icons that lead to social media sites whenever clicked.
 
-Features to be added:
-1) Submit button leads to another page that thanks the user for submitting the contact form. May also add requirements for submitting the form using Javascript.
 
 
 
